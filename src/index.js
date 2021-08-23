@@ -13,13 +13,8 @@
 //   console.log(`Server running at http://${hostname}:${port}/`);
 // });
 
+const app = require("./app")
 
-const express = require("express");
-
-const app = express();
-app.get("/", (req, res)=>{
-    res.send("hi");
-} );
 
 app.listen(3333, ()=>{
     console.log("servidor  na porta 3333")
