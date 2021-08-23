@@ -1,6 +1,6 @@
 const {Model, DataTypes} = require("sequelize")
 
-class Post extends Model{
+class Post extends Model(){
 
     static init(connecttion){
         super.init(
@@ -16,5 +16,11 @@ class Post extends Model{
         )
     }
 
-    static associations
+    static associations(){
+        
+    }
 }
+
+
+
+module.exports = Post;
