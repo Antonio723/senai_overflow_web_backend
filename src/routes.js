@@ -9,8 +9,6 @@ const authMiddleware = require("./middlewares/auth");
 routes.post('/sessions', sessionController.store);
 routes.post('/users', userController.store);
 
-
-
 routes.use(authMiddleware);
 
 //rotas privadas
